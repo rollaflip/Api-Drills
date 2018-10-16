@@ -1,0 +1,22 @@
+{
+  "name": "api-drills",
+  "version": "1.0.0",
+  "description": "API drills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollaflip/Api-Drills.git"
+  },
+  "author": "Ian Knepper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rollaflip/Api-Drills/issues"
+  },
+  "homepage": "https://github.com/rollaflip/Api-Drills#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
