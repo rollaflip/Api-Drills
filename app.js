@@ -3,6 +3,7 @@ const app = express()
 //spins up express application to gain access to methods
 
 const productRoutes = require('./api/routes/products')
+const orderRoutes = require('./api/routes/orders')
 
 
 
@@ -15,5 +16,6 @@ const productRoutes = require('./api/routes/products')
     // // request, response, next passes request to next middleware
 
 app.use('/products', productRoutes)
+app.use('/orders', orderRoutes)
 //only paths that start with products will handle 2nd argument
 module.exports = app
