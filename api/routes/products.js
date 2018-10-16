@@ -17,4 +17,32 @@ router.post('/', (req, res, next) => {
   })
 })
 
+router.get('/:productId', (req, res, next) => {
+  const id = req.params.productId
+  if(id === 'special'){
+    res.status(200).json({
+      message: 'You discovered the special ID!',
+      id: id
+    })
+  } else {
+    res.status(200).json({
+      message: 'you passed an id'
+    })
+  }
+})
+
+router.patch('/:productId', (req, res, next) => {
+  const id = req.params.productId
+    res.status(200).json({
+      message: `You updated product ${id}`
+    })
+})
+
+router.delete('/:productId', (req, res, next) => {
+  const id = req.params.productId
+  res.status(200).json({
+    message: `You deleted a product: ${id}`
+  })
+})
+
 module.exports = router
